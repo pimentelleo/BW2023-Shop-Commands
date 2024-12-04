@@ -1,6 +1,6 @@
 package com.tomkeuper.bedwars.addon;
 
-import com.avaje.ebeaninternal.server.lib.util.NotFoundException;
+// import com.avaje.ebeaninternal.server.lib.util.NotFoundException;
 import com.tomkeuper.bedwars.addon.command.ShopMenu;
 import com.tomkeuper.bedwars.addon.command.UpgradesMenu;
 import com.tomkeuper.bedwars.addon.integrations.BedWars2023;
@@ -33,9 +33,9 @@ public class ShopCommands extends JavaPlugin {
 
     private void populateIntegrations(IIntegration... integrations) {
         for (IIntegration integration : integrations) {
-            if (!integration.enable()) {
-                throw new NotFoundException("Plugin could not be enabled as on or more of the dependencies could not be hooked.");
-            }
+            // if (!integration.enable()) {
+            //     throw new NotFoundException("Plugin could not be enabled as on or more of the dependencies could not be hooked.");
+            // }
         }
     }
     public boolean isBedWarsInstalled(){
